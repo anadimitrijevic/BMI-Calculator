@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<title>BMI Kalkulator</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script language="JavaScript">
+	function calculateBmi() {
+		var weight = document.bmiForm.weight.value
+		var height = document.bmiForm.height.value
+		if(weight > 0 && height > 0){	
+			var finalBmi = Math.round(weight/(height/100*height/100)*100)/100
+			document.bmiForm.bmi.value = finalBmi
+		}
+		else{
+			alert("Please fill in everything correctly")
+		}
+	}
+	</script>
+
+</head>
+<body>
+	<div id="wrap">
+		<p id ="naslov" style = "font-size:30px;">BMI KALKULATOR</p>
+		<div class = "main">
+			<div id ="levakolona"><img src="images/doctor.png" height="220" widht="320"></div>
+			<div id="desnakolona">Indeks telesne mase (engl. Body Mass Index, BMI) je metoda računanja uhranjenosti. BMI se izračunava vrlo jednostavno, a temelji se na odnosu telesne težine i visine osobe. Što je indeks više izvan okvira urednih vrednosti, to je veći rizik od obolevanja od raznih srčanih bolesti, dijabetesa i povišenog krvnog pritiska.
+
+				BMI treba shvatiti kao okvirnu metodu, budući da stvarno zdravstveno stanje osobe treba oceniti u širem medicinskom kontekstu.</div>
+			</div>
+
+			<div class="form">
+				<div id="forma">
+					<form name="bmiForm">
+						<p id="forma">
+							Vaša težina (kg): <input type="text" name="weight" size="25" style="margin-left:4px;"><br />
+							Vaša visina (cm): <input type="text" name="height" size="25"><br />
+							<br>
+							<input type="button" value="Izračunaj BMI" onClick="calculateBmi()" style="margin-left:150px;"><br />
+							<br>
+							Vaš BMI: <input type="text" name="bmi" size="25" style="margin-left:57px;"><br />
+							<br />
+							<br>
+							<input type="reset" value="Resetuj" style="margin-left:170px;"/>
+						</p>
+					</form>
+				</div>
+				<div id="objasnjenje">
+					<img src="images/tabela.png">
+				</div>
+			</div>
+			<footer>By <i>Ana Dimitrijević</i></footer>
+		</div>
+	</body>
+
+	</html>

@@ -1,0 +1,75 @@
+body {
+	background: white;
+	font-family: Sans-Serif;
+}
+
+#forma{
+	color:white; 
+	margin-left:30px; 
+	font-size:14px;
+	margin-top: 300px;
+	text-align: left;
+}
+
+#objasnjenje{
+	width: 700px;
+	text-align: left;
+	margin-top: -215px;
+	color: white;
+	opacity: 0.9;
+	margin-left: 450px;
+}
+
+.form{
+	width: 800px;
+}
+
+#wrap {
+	background: url('images/blue.jpg');
+	background-position: right top;
+	width: 1000px;
+	margin-left: 150px;
+	margin-top: 20px;
+	min-height: 500px;
+	padding: 20px 20px 60px 50px;
+	border-radius: 15px;
+}
+
+.main{
+	width: 800px;
+}
+
+#levakolona{
+	width: 300px;
+	float: left;
+	margin-left: 120px;
+}
+
+#desnakolona{
+	width: 480px;
+	margin-top: -190px;
+	margin-left: 450px;
+	float: left;
+	color: white;
+	opacity: 0.9;
+	text-align: justify;
+}
+
+#tabela{
+	margin-left: -70px;
+}
+
+#naslov{
+	text-align:center; 
+	color: white;
+	margin-top: -10px;
+
+}
+
+footer{
+	margin-left: 430px;
+	margin-top: 100px;
+	margin-bottom: -40px;
+	color: blue;
+	opacity: 1;
+}
